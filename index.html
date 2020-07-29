@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Pesquisa de Usuários</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="top">
+        <h1>Pesquisa de Usuários</h1>
+        <div class="input-group">
+          <input
+            id="searchline"
+            type="text"
+            class="form-control"
+            placeholder="Digite um nome"
+            aria-describedby="button-addon2"
+          />
+          <div class="input-group-append">
+            <button
+              id="buttonSearch"
+              class="btn btn-primary mb-2"
+              type="button"
+            >
+              Buscar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mid">
+        <div class="statistic">
+          <div id="valor">
+            <h2><span id="searchStatistic"></span></h2>
+          </div>
+          <div id="tabstatistic"></div>
+        </div>
+
+        <div class="text-center">
+          <div
+            id="spinner"
+            class="spinner-border text-primary"
+            role="status"
+            style="visibility: hidden;"
+          >
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+
+        <div class="grade-people">
+          <div class="people">
+            <h2><span id="countPeople">Aguardando informações...</span></h2>
+            <table id="listPeople" class="table table-hover fluid"></table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/people.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
